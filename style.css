@@ -1,0 +1,852 @@
+body
+{
+	position: relative;
+	/*width: 1920px;
+	height: 2814px;*/
+	background-color: #185125;
+	
+	background-image: url('pliki/seamless.webp');
+	background-attachment: fixed;
+}
+
+#mobilka {
+    display:none;
+  }
+	
+#kompik {
+    display:block;
+  }
+  
+  @media screen and  (max-width: 1024px) {
+#mobilka {
+    display:block !important;
+  }
+	
+#kompik {
+    display:none !important;
+  }
+}
+
+/* -------------------- SEKCJA 1 -------------------- */
+
+#SG_sekcja1, #SG_sekcja2, #SG_sekcja3
+{
+	width:100%;
+}
+
+#SG_S1_domek
+{
+	width:50%;
+	float:left;
+	height: 40em;
+}
+
+.SG_listek
+{
+    position: absolute;
+    width: 20vw;
+    height: 20em;
+    margin-left: 29vw;
+    top: 25em;
+    z-index: 1;
+
+	background-image: url('pliki/lisc-glowna.webp');
+	background-size: 15.683vw 15em;
+	background-repeat: no-repeat;
+}
+
+.SG_listki
+{
+	position: absolute;
+	width: 55.220vw;
+	height: 48.500625em;
+	left: -21.918vw;
+    top: 25em;
+    z-index: 1;
+	
+	background-image: url('pliki/liscie-glowna.webp');
+	background-repeat: no-repeat;
+	background-size: 55.220vw 48.500625em;
+}
+
+
+.SG_vectorDomekBiale {
+    float: left;
+    clip-path: polygon(0% 48%, 46% 48%, 46% 33%, 40% 33%, 59% 12%, 59% 4%, 64% 4%, 64% 7%, 68% 4%, 96% 33%, 90% 33%, 89% 53%, 74% 53%, 73% 35%, 64% 35%, 64% 100%, 0% 100%);
+    transition: all 0.5s ease;
+    background: rgba(255,255,255, 0.2);
+    max-width: 100%;
+    width: 51vw;
+    position: absolute;
+    height: 50.5em;
+    margin-top: -1.3em;
+    margin-left: -7.026vw;
+}
+
+.SG_vectorDomek {
+    float: left;
+	clip-path: polygon(0 48%, 45% 48%, 45% 33%, 38% 33%, 58% 10%, 58% 2%, 65% 2%, 65% 5%, 68% 1%, 98% 33%, 90% 33%, 90% 54%, 73% 54%, 73% 36%, 64% 36%, 64% 100%, 63% 100%, 63% 35%, 74% 35%, 74% 53%, 89% 53%, 89% 32%, 96% 32%, 68% 3%, 64% 7%, 64% 3%, 59% 3%, 59% 10%, 40% 32%, 46% 32%, 46% 49%, 0 49%);clip-path: polygon(0 48%, 45% 48%, 45% 33%, 38% 33%, 58% 10%, 58% 1%, 65% 1%, 65% 5%, 68% 1%, 98% 33%, 90% 33%, 90% 54%, 73% 54%, 73% 36%, 64% 36%, 64% 100%, 63% 100%, 63% 35%, 74% 35%, 74% 53%, 89% 53%, 89% 32%, 96% 32%, 68% 3%, 64% 7%, 64% 2%, 59% 2%, 59% 10%, 40% 32%, 46% 32%, 46% 49%, 0 49%);
+	transition: all 0.5s ease;
+	background: white;
+	max-width:100%;
+    width: 50.601vw;
+    height: 47em;
+}
+
+
+/* TEST */
+
+.SG_vectorDomek:hover {
+	clip-path: polygon( 45% 48%, 45% 33%, 38% 33%, 58% 10%, 58% 2%, 65% 2%, 65% 5%, 68% 1%, 98% 33%, 90% 33%, 90% 54%, 73% 54%, 73% 36%, 64% 36%, 64% 100%, 63% 100%, 63% 35%, 74% 35%, 74% 53%, 89% 53%, 89% 32%, 96% 32%, 68% 3%, 64% 7%, 64% 3%, 59% 3%, 59% 10%, 40% 32%, 46% 32%, 46% 49%, 0 49%);clip-path: polygon(0 48%, 45% 48%, 45% 33%, 38% 33%, 58% 10%, 58% 1%, 65% 1%, 65% 5%, 68% 1%, 98% 33%, 90% 33%, 90% 54%, 73% 54%, 73% 36%, 64% 36%, 64% 100%, 63% 100%, 63% 35%, 74% 35%, 74% 53%, 89% 53%, 89% 32%, 96% 32%, 68% 3%, 64% 7%, 64% 2%, 59% 2%, 59% 10%, 40% 32%, 46% 32%, 46% 49%);
+	background: rgba(255,255,255, 0.0);
+}
+
+.SG_vector1 {
+   filter:url(#round);
+}
+
+.SG_vector2 {
+filter: 
+drop-shadow(0px 4px 29px rgba(255,255,255, 0.7)) 
+drop-shadow(0px 4px 6px rgba(255,255,255, 0.5)) 
+drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.70)) 
+drop-shadow(2px 2px 4px #FFFFFF);
+	margin-top: 8em;
+    margin-right: 1.673vw;
+    margin-left: -6.691vw;
+}
+
+
+#SG_S1_tytul
+{
+	width:50%;
+	float: left;
+	height: 55em;
+	padding-top: 14em;
+}
+
+.SG_tytul
+{
+	margin-right:4.184vw;
+	font-family: 'Inria Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 3.4vw;
+	/*line-height: 4.8125em;*/
+	text-transform: uppercase;
+	
+	color: #FFFFFF;
+
+	text-shadow: 0px 4px 4px #185125, 2px 2px 8px #FFFFFF;
+}
+
+.SG_podtytul
+{
+	margin-right:4em;
+	margin-top: -0.5em;
+	margin-bottom: 0.4em;
+	font-family: 'Inria Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 2.267vw;
+	/*line-height: 0.1em;*/
+	text-transform: uppercase;
+	
+	color: #FFFFFF;
+
+	text-shadow: 0px 4px 4px #185125, 2px 2px 8px #FFFFFF;
+}
+
+
+
+.SG_tekst
+{
+	margin-right:7em;
+	margin-top: 0.8em;
+	font-family: 'Inria Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.086vw;
+	line-height: 1.5em;
+
+	color: #FFFFFF;
+}
+
+.SG_ramka
+{
+	box-sizing: border-box;
+    border: 0.331vw solid #06280D;
+    min-width: 51%;
+    float: right;
+	/*height: 0.5em;*/
+	margin-top: 3em;
+	margin-right: -1em;
+	padding: 0.8em;
+    padding-left: 2.25em;
+	
+	background: #185125;
+	border-radius: 1.25em;
+	
+	text-align:left;
+	font-family: 'Inria Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.086vw;
+	line-height: 1.5em;
+
+	color: #FFFFFF;
+}
+
+.SG_ramka:before 
+{
+  content: " ";
+  
+  box-sizing: border-box;
+  border: 0.945vw solid #185125;
+  border-radius: 2.5em;
+  
+  position: absolute;
+  z-index: -1;
+    min-width: 53%;
+    height: 5.5em;
+    margin-top: -2em;
+    float: left;
+    margin-left: -3.5em;
+}
+
+/* -------------------- SEKCJA 2 -------------------- */
+
+#SG_S2_pasek, #SG_S2_zarowka
+{
+	width:30%;
+	float:left;
+	height: 40em;
+}
+
+#SG_S2_tekst
+{
+	width:40%;
+	float:left;
+	height: 40em;
+    position: relative;
+    z-index: 2;	
+}
+
+.SG_vectorPasekBiale {
+    float: left;
+    clip-path: inset(0 5% 0 0);
+    transition: all 0.5s ease;
+    background: rgba(255,255,255, 0.2);
+    max-width: 100%;
+    width: 33.298vw;
+    position: absolute;
+    height: 43.8em;
+    margin-top: 3.18em;
+    margin-left: -6.189vw;
+}
+
+.SG_vectorPasek {
+    float: left;
+	clip-path: inset(0 4% 0 94%);
+	transition: all 0.5s ease;
+	background: white;
+	max-width:100%;
+    width: 33.298vw;
+    height: 47em;
+}
+
+.SG_vector3 {
+filter: 
+drop-shadow(0px 4px 29px rgba(255,255,255, 0.7)) 
+drop-shadow(0px 4px 6px rgba(255,255,255, 0.5)) 
+drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.70)) 
+drop-shadow(2px 2px 4px #FFFFFF);
+	margin-top: -15em;
+    margin-right: 1.673vw;
+    margin-left: -6.189vw;
+}
+
+.SG_tekst2
+{
+	position:relative;
+	z-index:2;
+	
+	margin-right:3em;
+	margin-left: 3.5em;
+	margin-top: 0em;
+	font-family: 'Inria Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.086vw;
+	line-height: 1.5em;
+
+	color: #FFFFFF;
+}
+
+.SG_ramka2
+{
+	box-sizing: border-box;
+    border: 0.331vw solid #06280D;
+    min-width: 51%;
+    float: right;
+	margin-top: 2em;
+	margin-right: 4.5vw;
+	padding: 0.8em;
+    padding-left: 2.091vw;
+	padding-right: 2.091vw;
+	
+	background: #185125;
+	border-radius: 1em;
+	
+	text-align:left;
+	font-family: 'Inria Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.086vw;
+	line-height: 1.5em;
+
+	color: #FFFFFF;
+}
+
+.SG_ramka2:before 
+{
+  content: " ";
+  
+  box-sizing: border-box;
+  border: 0.945vw solid #185125;
+  border-radius: 2em;
+  
+  position: absolute;
+  z-index: -1;
+    min-width: 32.2vw;
+    height: 8.5em;
+    margin-top: -2em;
+    float: left;
+    margin-left: -3.4vw;
+}
+
+.SG_zarowka
+{
+	position: absolute;
+	width: 27.705vw;
+	height: 43.75em;
+	margin-left: 0.5vw;
+	margin-top: -23em;
+	z-index:1;
+	
+	background-image: url('pliki/zarowka.webp');
+	background-repeat: no-repeat;
+	background-size: 27.705vw 43.75em;
+}
+
+.SG_vectorZarowka {
+    float: left;
+	clip-path: polygon(3% 100%, 7% 100%, 7% 95%, 93% 95%, 93% 6%, 89% 6%, 89% 92%, 3% 92%);
+	transition: all 0.5s ease;
+	background: white;
+	max-width:100%;
+    width: 15vw;
+    height: 16em;
+}
+
+.SG_vector4 {
+filter: 
+drop-shadow(0px 4px 29px rgba(255,255,255, 0.7)) 
+drop-shadow(0px 4px 6px rgba(255,255,255, 0.5)) 
+drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.70)) 
+drop-shadow(2px 2px 4px #FFFFFF);
+	margin-top: 16.1em;
+    margin-left: 1.5vw;
+}
+
+/* -------------------- SEKCJA 3 -------------------- */
+
+#SG_S3_zdjecie
+{
+	width:75%;
+	float:left;
+	height: 40em;
+}
+
+#SG_S3_przycisk
+{
+	width:25%;
+	float:left;
+	height: 40em;
+}
+
+.SG_vectorZdjecie {
+    float: left;
+	clip-path: polygon(39% 0%, 39% 4%, 26% 4%, 26% 75%, 96% 75%, 96% 0%, 97% 0%, 97% 77%, 25% 77%, 25% 2%, 38% 2%, 38% 0%, 39% 0%);
+	transition: all 0.5s ease;
+	background: white;
+	max-width:100%;
+    width: 100vw;
+    height: 50em;
+}
+
+.SG_vector5 {
+filter: 
+drop-shadow(0px 4px 29px rgba(255,255,255, 0.7)) 
+drop-shadow(0px 4px 6px rgba(255,255,255, 0.5)) 
+drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.70)) 
+drop-shadow(2px 2px 4px #FFFFFF);
+	margin-top: -8.2em;
+    margin-left: -4.8vw;
+}
+
+.SG_vectorZdjecieBiale {
+    float: left;
+    clip-path: polygon(0% 0%, 37% 0%, 37% 3%, 26% 3%, 26% 76%, 83.5% 76%, 83.5% 76%, 0% 76%);
+    transition: all 0.5s ease;
+    background: rgba(255,255,255, 0.2);
+    max-width: 100%;
+    width: 100vw;
+    height: 50em;
+    position: absolute;
+    margin-top: 0.2em;
+    margin-left: -10.6vw;
+}
+
+.SG_zdjecie
+{
+	position: absolute;
+    width: 55.149vw;
+    height: 35.625em;
+    margin-left: 15.682vw;
+    margin-top: 2em;
+	z-index: -1;
+	
+    background-image: url(pliki/zdjecie-szersze.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+	
+}
+
+.SG_zdjecieLiscie
+{
+	position: absolute;
+    z-index: 1;
+	
+    width: 67.015vw;
+    height: 63.886875em;
+    margin-left: 14.637vw;
+    margin-top: -28em;
+
+	background-image: url(pliki/liscie-wokol-zdjecia.webp);
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.SG_tekst3
+{
+	position:relative;
+	z-index:2;
+	
+	margin-right:9em;
+	margin-left: 0.5em;
+	margin-top: 4em;
+	font-family: 'Inria Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.086vw;
+	line-height: 1.5em;
+
+	color: #FFFFFF;
+}
+
+.SG_ramka3
+{
+	box-sizing: border-box;
+    border: 0.331vw solid #06280D;
+    min-width: 18vw;
+    float: right;
+	margin-top: 1.3em;
+	margin-right: 11vw;
+	padding: 0.6em;
+    padding-left: 2.2vw;
+	padding-right: 2.2vw;
+	
+	position:relative;
+	z-index:2;
+	transition: all 0.5s ease;
+	
+	background: #185125;
+	border-radius: 1em;
+	
+	text-align:left;
+	font-family: 'Inria Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.5vw;
+	line-height: 1.5em;
+
+	color: #FFFFFF;
+	cursor:pointer;
+}
+
+.SG_ramka3:before 
+{
+  content: " ";
+  transition: all 0.5s ease;
+  
+  box-sizing: border-box;
+  border: 0.8vw solid #185125;
+  border-radius: 1.6em;
+  
+  position: absolute;
+  z-index: -1;
+    min-width: 19.6vw;
+    height: 4.19em;
+    margin-top: -1.35em;
+    float: left;
+    margin-left: -3.3vw;
+}
+
+.SG_ramka3:hover::before {
+	border: 0.8vw solid #ffffff;
+	min-width: 21.1vw;
+	height: 4em;
+	margin-top: -1.25em;
+}
+
+.SG_ramka3:hover
+{
+	filter: 
+	drop-shadow(0px 4px 29px rgba(255,255,255, 0.7)) 
+	drop-shadow(0px 4px 6px rgba(255,255,255, 0.5)) 
+	drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.70)) 
+	drop-shadow(2px 2px 4px #FFFFFF);
+	font-size: 1.7vw;
+	min-width: 19.5vw;
+}
+
+.SG_ramkaBiale
+{
+	float: left;
+clip-path: inset(31% 100% 0 100%);
+transition: all 0.5s ease;
+background: rgba(255,255,255, 0.2);
+max-width: 28vw;
+width: 28vw;
+height: 18em;
+margin-left: -2.7em;
+position: absolute;
+margin-top: 7.9em;
+}
+
+.SG_ramka3:hover
+{
+	filter:
+			drop-shadow(0px 4px 29px rgba(255,255,255, 0.7))
+			drop-shadow(0px 4px 6px rgba(255,255,255, 0.5))
+			drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.70))
+			drop-shadow(2px 2px 4px #FFFFFF);
+	font-size: 1.7vw;
+	min-width: 19.5vw;
+}
+/* -------------------- AKTUALNOŚCI - pasek + tekst -------------------- */
+
+#SG_aktualnosci
+{
+	width:100%;
+	float:left;
+	height: 40em;
+}
+
+.SG_vector6 {
+	filter:
+			drop-shadow(0px 4px 29px rgba(255,255,255, 0.7))
+			drop-shadow(0px 4px 6px rgba(255,255,255, 0.5))
+			drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.70))
+			drop-shadow(2px 2px 4px #FFFFFF);
+	margin-top: -17em;
+	margin-left: 2.5vw;
+}
+
+.SG_vectorPasek2 {
+	float: left;
+	clip-path: polygon(26% 2%, 26% 75%, 100% 75%, 100% 77%, 25% 77%, 25% 2%);
+	transition: all 0.5s ease;
+	background: white;
+	max-width:100%;
+	width: 50vw;
+	height: 24em;
+}
+
+#SG_AK_sekcja
+{
+	margin-left: 31.5vw;
+}
+
+
+element.style {
+}
+.SG_vectorPasekBiale2 {
+	float: left;
+	clip-path: inset(0 5% 0 0);
+	transition: all 0.5s ease;
+	background: rgba(255,255,255, 0.2);
+	max-width: 100%;
+	width: 100%;
+	position: absolute;
+	height: 45em;
+	margin-top: 18em;
+	margin-left: 5vw;
+}
+
+/* ------------------------------- MOBILKA --------------------------------- */
+/* -------------------- SEKCJA 1 -------------------- */
+
+.SG_m_pasek
+{
+	clip-path: inset(0 5% 0 0);
+	background: white;
+	max-width: 100%;
+	width: 2vw;
+	position: absolute;
+	height: 350em;
+	margin-top: 8em;
+	margin-left: 0vw;
+}
+
+@media screen and (max-width:1024px)
+{
+	#SG_S1_domek
+	{
+		width: 100%;
+	}
+
+	.SG_listek
+	{
+		width: 35vw;
+		background-size: 35vw 5em;
+		margin-left: 60vw;
+		margin-top: 8em;
+	}
+
+	.SG_listki
+	{
+		width: 150vw;
+		height: 70em;
+		left: 0vw;
+		top: 0em;
+		background-size: 150vw 70em;
+		margin-top: 122em;
+		margin-left: -40vw;
+	}
+
+	.SG_vectorDomek
+	{
+		width: 100vw;
+		height: 17em;
+		clip-path:polygon(0 48%, 45% 48%, 45% 33%, 38% 33%, 58% 10%, 58% 1%, 65% 1%, 65% 5%, 68% 1%, 98% 33%, 90% 33%, 90% 54%, 73% 54%, 73% 36%, 64% 36%, 64% 55%, 63% 55%, 63% 35%, 74% 35%, 74% 53%, 89% 53%, 89% 32%, 96% 32%, 68% 3%, 64% 7%, 64% 2%, 59% 2%, 59% 10%, 40% 32%, 46% 32%, 46% 49%, 0 49%);
+	}
+
+	.SG_vector2
+	{
+		margin-top: 1.5em;
+		margin-right: 0vw;
+		margin-left: 6vw;
+	}
+
+	#SG_S1_tytul
+	{
+		width:100%;
+		margin-left: 33vw;
+		margin-top: 6em;
+	}
+
+	.SG_tytul
+	{
+		font-size: 12vw;
+	}
+
+	.SG_podtytul
+	{
+		font-size: 7vw;
+		margin-top: 0em;
+	}
+
+	.SG_tekst
+	{
+		font-size: 5vw;
+		margin-right:5em;
+	}
+	.SG_ramka
+	{
+		font-size: 5vw;
+		padding-right: 13vw;
+		border: 1.8vw solid #06280D;
+		border-radius: 1.25em;
+		margin-right: 2em;
+	}
+
+	.SG_ramka:before
+	{
+		border: 5vw solid #185125;
+		border-radius: 1.4em;
+		min-width: 97.5vw;
+		height: 7em;
+	}
+
+	/* -------------------- MOBILKA - SEKCJA 2 -------------------- */
+
+	#SG_S2_tekst, #SG_S2_zarowka
+	{
+		width:100%;
+		height: 40em;
+		margin-top:30em;
+	}
+
+	.SG_zarowka
+	{
+		position: relative;
+		width: 100vw;
+		height: 100em;
+		margin-left: 47vw;
+		margin-top: -15em;
+		background-size: 110vw 95em;
+	}
+
+	.SG_vectorZarowka
+	{
+		clip-path: polygon(100% 95%, 1% 95%, 1% 6%, 5% 6%, 5% 92%, 120% 92%);
+		width: 40vw;
+		height: 25em;
+
+		margin-top: -40em;
+		margin-left: 63em;
+
+	}
+
+	.SG_vector4
+	{
+		margin-top: 28em;
+	}
+
+	.SG_tekst2
+	{
+		font-size: 5vw;
+		margin-right: 2em;
+		margin-left: 6.5em;
+		margin-top: -4em;
+	}
+
+	.SG_ramka2
+	{
+		font-size: 4.5vw;
+		padding-right: 13vw;
+		border: 1.8vw solid #06280D;
+		border-radius: 1.25em;
+		margin-right: -8em;
+		padding-left: 40vw;
+		margin-top: 3em;
+		margin-left: -2em;
+	}
+
+	.SG_ramka2:before
+	{
+		border: 5vw solid #185125;
+		border-radius: 2em;
+		min-width: 145vw;
+		margin-left: -39vw;
+		height: 10em;
+	}
+
+	/* -------------------- MOBILKA - SEKCJA 3 -------------------- */
+
+	#SG_S3_zdjecie
+	{
+		width:100%;
+		height: 40em;
+		margin-top: -10em;
+	}
+
+	#SG_S3_przycisk
+	{
+		width:100%;
+		height: 175em;
+	}
+
+	.SG_zdjecieLiscie
+	{
+		width: 154vw;
+		height: 100em;
+		margin-left: -7vw;
+		margin-top: 58em;
+		background-size: 180vw 95em;
+	}
+
+	.SG_zdjecie {
+		width: 131vw;
+		height: 50em;
+		margin-left: 15.682vw;
+		margin-top: 89em;
+		background-size: 131vw 50em;
+	}
+
+	.SG_m_pasek2
+	{
+		clip-path: inset(0 5% 0 0);
+		background: white;
+		max-width: 100%;
+		width: 2vw;
+		position: absolute;
+		height: 115em;
+		margin-top: 24em;
+		margin-left: 0vw;
+	}
+
+	.SG_m_pasek3
+	{
+		clip-path: inset(83% 0% 15% 12%);
+		background: white;
+		max-width: 100%;
+		width: 145vw;
+		position: absolute;
+		height: 70em;
+		margin-top: 80em;
+		margin-left: -1vw;
+	}
+
+	.SG_vector3 {
+		margin-top: 1.5em;
+		margin-right: -40vw;
+		margin-left: 0vw;
+	}
+
+	.SG_tekst3
+	{
+		font-size: 5vw;
+		margin-left: 3em;
+		margin-right: 0em;
+		margin-top: 38em;
+	}
+
+	.SG_ramka3 {
+		border: 2vw solid #06280D;
+		min-width: 100vw;
+		margin-top: 1.5em;
+		margin-right: -32vw;
+		padding: 0.3em;
+		padding-left: 14vw;
+		padding-right: 14vw;
+		font-size: 10vw;
+		line-height: 1.5em;
+	}
+
+	.SG_ramka3:before {
+		border: 4vw solid #185125;
+		border-radius: 1.3em;
+		min-width: 124vw;
+		height: 3.3em;
+		margin-top: -0.9em;
+		margin-left: -20.2vw;
+	}
+
+	.SG_vector1
+	{
+		filter:url(#m_round);
+	}
+}
